@@ -1,0 +1,255 @@
+/* ==========================
+   Estilos Generales
+========================== */
+body {
+    font-family: Arial, sans-serif; /* Fuente general del documento */
+    margin: 0; /* Sin márgenes en el cuerpo */
+    padding: 0; /* Sin padding en el cuerpo */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+/* ==========================
+   Estilos del Encabezado
+========================== */
+header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+
+.logo {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.logo-img {
+    width: 20px; /* Ajustar el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+    margin-right: 30px; /* Espacio entre el logo y el texto */
+}
+
+
+nav {
+    display: flex; /* Usar flexbox para el menú de navegación */
+    justify-content: space-between; /* Espaciar elementos entre sí */
+    align-items: center; /* Centrar elementos verticalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrar horizontalmente */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+nav .logo {
+    font-size: 24px; /* Tamaño de la fuente del logo */
+    font-weight: bold; /* Hacer el texto del logo en negrita */
+}
+
+nav ul {
+    list-style: none; /* Sin viñetas en la lista */
+    display: flex; /* Usar flexbox para los elementos de la lista */
+    gap: 20px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: white; /* Color de los enlaces de navegación */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+/* ==========================
+   Estilos de la Sección Hero
+========================== */
+.hero {
+    background: #f4f4f4; /* Color de fondo de la sección hero */
+    padding: 50px 20px; /* Espaciado en la sección hero */
+    text-align: center; /* Centrar el texto */
+}
+
+.hero h1 {
+    margin: 0; /* Sin margen para el encabezado principal */
+}
+
+.hero p {
+    font-size: 20px; /* Tamaño de la fuente del párrafo */
+}
+
+.btn {
+    display: inline-block; /* Permite añadir espaciado y márgenes */
+    margin-top: 20px; /* Espaciado superior del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Sin subrayado en el botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* ==========================
+   Estilos de la Sección About
+========================== */
+.about {
+    display: flex; /* Usar flexbox para la sección about */
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 50px 20px; /* Espaciado en la sección about */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrar horizontalmente */
+}
+
+.logo2-img {
+    max-width: 100px; /* Ajustar el tamaño máximo de la imagen */
+    margin-right: 40px; /* Espaciado a la derecha de la imagen */
+    
+}
+
+.about-text {
+    flex: 1; /* Ocupa el espacio restante en la sección */
+}
+
+/* ==========================
+   Estilos de la Sección de Políticas
+========================== */
+.policies {
+    padding: 50px 20px; /* Espaciado en la sección de políticas */
+    text-align: center; /* Centrar el texto en la sección */
+}
+
+.policy-grid {
+    display: grid; /* Usar grid para las políticas */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos de las políticas */
+}
+
+.policy {
+    background: #e9ecef; /* Color de fondo de cada política */
+    padding: 20px; /* Espaciado interno de cada política */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* ==========================
+   Estilos de la Sección de Contacto
+========================== */
+.contact {
+    display: flex; /* Usar flexbox para la sección de contacto */
+    flex-direction: column; /* Organizar elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    margin: 50px 0; /* Margen superior e inferior */
+}
+
+.contact h2 {
+    text-align: center; /* Centrar el título de contacto */
+    margin-bottom: 20px; /* Margen inferior del título */
+}
+
+.contact-content {
+    display: flex; /* Usar flexbox para el contenido de contacto */
+    justify-content: space-between; /* Separar elementos entre sí */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+form {
+    flex: 1; /* Ocupa el espacio restante en la sección */
+    margin-right: 50px; /* Margen derecho del formulario */
+}
+
+.contact-info {
+    flex: 1; /* Ocupa el espacio restante en la sección */
+    margin-left: 50px; /* Margen izquierdo de la info de contacto */
+    display: flex; /* Usar flexbox para la info de contacto */
+    flex-direction: column; /* Organizar en columna */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.contact-info p {
+    display: flex; /* Usar flexbox para alinear iconos y texto */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-bottom: 10px; /* Margen inferior entre los párrafos */
+}
+
+.contact-info i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    color: #007bff; /* Color del icono */
+}
+
+
+form input, form textarea {
+    display: block; /* Hacer que los inputs ocupen toda la línea */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior de los campos */
+    border: 1px solid #ccc; /* Bordes del campo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+form button {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* ==========================
+   Estilos del Pie de Página
+========================== */
+footer {
+    background-color: #f0f0f0; /* Color de fondo del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+}
+
+.footer-content {
+    display: flex; /* Usar flexbox para el pie de página */
+    justify-content: space-between; /* Separar elementos a izquierda y derecha */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.social-icons {
+    display: flex; /* Usar flexbox para los iconos sociales */
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+    color: #000; /* Color de los iconos sociales */
+    text-decoration: none; /* Sin subrayado en los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+}
+
+.copyright {
+    margin: 0; /* Sin margen para el texto de copyright */
+    font-size: 14px; /* Tamaño de la fuente del copyright */
+    color: #333; /* Color del texto del copyright */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* ==========================
+   Media Queries para Responsividad
+========================== */
+@media (max-width: 768px) {
+    .policy-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .contact-content {
+        flex-direction: column; /* Apilar el formulario y la info de contacto */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    form {
+        margin-right: 0; /* Sin margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Margen inferior del formulario */
+        width: 100%; /* Ancho completo */
+    }
+
+    .contact-info {
+        margin-left: 0; /* Sin margen izquierdo en pantallas pequeñas */
+        width: 100%; /* Ancho completo */
+        align-items: flex-start; /* Alinear la info de contacto a la izquierda */
+    }
+}

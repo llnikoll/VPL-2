@@ -247,6 +247,27 @@ footer {
         width: 100%; /* Ancho completo */
     }
 
+
+        
+    .radio-section {
+        background: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .radio-section h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .radio-section iframe {
+        border-radius: 10px;
+        max-width: 600px;
+        height: 180px;
+    }
+    
+
+
     .contact-info {
         margin-left: 0; /* Sin margen izquierdo en pantallas pequeñas */
         width: 100%; /* Ancho completo */

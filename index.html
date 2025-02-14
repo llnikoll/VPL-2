@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partido de los Liberales - Vida, Propiedad y Libertad. Juntos por un Paraguay más justo, próspero y sostenible.">
     <title>Partido Progreso</title>
     <link rel="stylesheet" href="assets/index.css">
-    <!-- Incluyendo Font Awesome para los iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-nhJ94z88kCu4kFThbZWZbPGBZfnF4RiC7t7Ud4HRUbmBmhbsFoWfuWfyEY1xVvlAP7Z6st6GZ40VMezqJ6mH2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
       <nav>
           <div class="logo">
-            <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Ajustar la ruta -->
-              VIDA PROPIEDAD Y LIBERTAD
+              <img src="images/logo.png" alt="Logo Partido Liberales" class="logo-img"> VIDA PROPIEDAD Y LIBERTAD
           </div>
           <ul>
               <li><a href="#inicio">Inicio</a></li>
@@ -32,7 +31,7 @@
   </section>
 
   <section id="sobre-nosotros" class="about">
-      <img src="images/logo.png" alt="Logo" class="logo2-img"> <!-- Ajustar la ruta -->
+      <img src="images/logo.png" alt="Logo Partido Liberales" class="logo2-img">
       <div class="about-text">
           <h2>Sobre Nosotros</h2>
           <p>Ciudadanos paraguayos que decidimos fundar un partido que nos represente, bajo el nombre de PARTIDO DE LOS LIBERALES o LIBERALES VPL, nos propusimos agruparnos con el fin de revitalizar los principios que inspiraron los ideales patrióticos en los albores de la independencia nacional...</p>
@@ -64,9 +63,15 @@
       <h2>Contáctanos</h2>
       <div class="contact-content">
           <form>
-              <input type="text" name="name" placeholder="Nombre" required>
-              <input type="email" name="email" placeholder="Correo Electrónico" required>
-              <textarea name="message" placeholder="Mensaje" required></textarea>
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Nombre" required>
+              
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+              
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+              
               <button type="submit">Enviar Mensaje</button>
           </form>
           <div class="contact-info">
@@ -77,15 +82,21 @@
       </div>
   </section>
 
+  <!-- Reproductor de Radio Online -->
+  <section class="radio-section">
+      <h2>Escucha Nuestra Radio en Vivo</h2>
+      <iframe src="http://146.235.40.134/public/radiotv/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+  </section>
+
   <footer>
       <div class="footer-content">
           <p class="copyright">&copy; 2024 Partido de los Liberales. Todos los derechos reservados.</p>
           <div class="social-icons">
               <a href="#" aria-label="Buscar" target="_blank"><i class="fas fa-search"></i></a>
               <a href="https://www.instagram.com/tu_perfil" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.facebook.com/LiberalesdeCapiata?mibextid=ZbWKwL" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/LiberalesdeCapiata" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
               <a href="https://twitter.com/tu_perfil" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.tiktok.com/@joseloxcapiata?_t=8poPqbTt6rV&_r=1" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.tiktok.com/@joseloxcapiata" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
           </div>
       </div>
   </footer>
